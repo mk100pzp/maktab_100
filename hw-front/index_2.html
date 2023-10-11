@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        .header {
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .add-new-button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .show-dropdown {
+            color: gray;
+            color: white;
+            margin-right: 20px;
+        }
+        
+        .main-body {
+            flex: 1;
+            padding: 0;
+            overflow: auto;
+        }
+        
+        table {
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        
+        th,
+        td {
+            border: 1px solid gray;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        #thead {
+            background-color: gray;
+            color: white;
+        }
+        
+        .action-buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .pagination {
+            display: flex;
+        }
+        
+        .page-button {
+            background-color: gray;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <button class="add-new-button">Add New</button>
+            <div class="show-dropdown">
+                Show :
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </header>
+        <section class="main-body">
+            <table>
+                <thead id="thead">
+                    <tr>
+                        <th>Action</th>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>View</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="action-buttons">
+                            <button>Edit</button>
+                            <button>X</button>
+                        </td>
+                        <td>1</td>
+                        <td>Vincent</td>
+                        <td>31</td>
+                        <td><button>View</button></td>
+                    </tr>
+                    <tr>
+                        <td class="action-buttons">
+                            <button>Edit</button>
+                            <button>X</button>
+                        </td>
+                        <td>2</td>
+                        <td>Talor</td>
+                        <td>22</td>
+                        <td><button>View</button></td>
+                    </tr>
+                    <tr>
+                        <td class="action-buttons">
+                            <button>Edit</button>
+                            <button>X</button>
+                        </td>
+                        <td>3</td>
+                        <td>Justin</td>
+                        <td>26</td>
+                        <td><button>View</button></td>
+                    </tr>
+                    <tr>
+                        <td class="action-buttons">
+                            <button>Edit</button>
+                            <button>X</button>
+                        </td>
+                        <td>4</td>
+                        <td>Sean</td>
+                        <td>26</td>
+                        <td><button>View</button></td>
+                    </tr>
+                    <tr>
+                        <td class="action-buttons">
+                            <button>Edit</button>
+                            <button>X</button>
+                        </td>
+                        <td>5</td>
+                        <td>Keith</td>
+                        <td>24</td>
+                        <td><button>View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <footer class="footer">
+            <div>Showing 5 out of 25 entries</div>
+            <div class="pagination">
+                <button><<</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>>></button>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
